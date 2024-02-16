@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 80px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corner-image {
+    position: absolute;
+    top: 0;
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
+#img1 {
+    left: 0;
+}
+
+#img2 {
+    right: 0;
+}
+
+#title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px; /* Adjust size as needed */
+}
+
+.one {
+    padding: 20px;
+    overflow: hidden; /* Hide the overflowing text */
+    
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+}
+
+.moving-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    animation: moveRightToLeft 10s linear infinite; /* Define animation */
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin-top: 0%;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position */
+    }
+}
